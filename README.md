@@ -29,7 +29,8 @@ $ wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/4.
 $ unzip opencv.zip
 $ unzip opencv_contrib.zip
 ```
-## Step 5: Build OpenCV source code. Remember to change CUDA_ARCH_BIN according your GPU computing capability.
+## Step 5: Build OpenCV source code
+Remember to change CUDA_ARCH_BIN according your GPU computing capability (check: https://developer.nvidia.com/cuda-gpus)
 ```
 $ cd ~/opencv-4.2.0
 $ mkdir build
@@ -44,7 +45,7 @@ $ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 	-D OPENCV_DNN_CUDA=ON \
 	-D ENABLE_FAST_MATH=1 \
 	-D CUDA_FAST_MATH=1 \
-	-D CUDA_ARCH_BIN=6.1 \
+	-D CUDA_ARCH_BIN=5.0 \
 	-D WITH_CUBLAS=1 \
 	-D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules \
 	-D HAVE_opencv_python3=ON \
@@ -60,4 +61,11 @@ $ make -j16
 ```
 $ sudo make install
 $ sudo ldconfig
+```
+## Rebuild
+```
+$ cd ~/opencv-4.2.0
+$ rm -rf build
+$ mkdir build
+$ cd build
 ```
