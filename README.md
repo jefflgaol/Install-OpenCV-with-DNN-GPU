@@ -6,6 +6,7 @@ This guide will help you to build OpenCV (4.2.0) with DNN.
 $ sudo pip3 uninstall opencv-python
 $ sudo pip uninstall opencv-python
 $ sudo apt-get purge *opencv*
+$ sudo apt-get purge libopencv
 $ sudo apt list --installed | grep opencv
 ```
 ## Step 2: Install CUDA and cuDNN
