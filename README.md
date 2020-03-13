@@ -9,7 +9,7 @@ $ sudo apt-get purge *opencv*
 $ sudo apt-get purge libopencv
 $ sudo apt list --installed | grep opencv
 ```
-## Step 2: Install CUDA and cuDNN
+## Step 2: Install CUDA 10.0 and cuDNN
 ## Step 3: Install dependencies
 ```
 $ sudo apt-get update
@@ -31,7 +31,7 @@ $ unzip opencv.zip
 $ unzip opencv_contrib.zip
 ```
 ## Step 5: Build OpenCV source code
-Remember to change CUDA_ARCH_BIN according your GPU computing capability (check: https://developer.nvidia.com/cuda-gpus)
+Remember to change CUDA_ARCH_BIN according your GPU computing capability (check: https://developer.nvidia.com/cuda-gpus). The minimum GPU computing capability is 5.3.
 ```
 $ cd ~/opencv-4.2.0
 $ mkdir build
@@ -46,7 +46,7 @@ $ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 	-D OPENCV_DNN_CUDA=ON \
 	-D ENABLE_FAST_MATH=1 \
 	-D CUDA_FAST_MATH=1 \
-	-D CUDA_ARCH_BIN=5.0 \
+	-D CUDA_ARCH_BIN=6.1 \
 	-D WITH_CUBLAS=1 \
 	-D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib-4.2.0/modules \
 	-D HAVE_opencv_python3=ON \
