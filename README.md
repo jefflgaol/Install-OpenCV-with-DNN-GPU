@@ -1,12 +1,11 @@
 # How-To-Install-OpenCV-with-DNN-GPU
 This guide will help you to build OpenCV (4.2.0) with DNN.
-
 ## Step 1: Remove previous existing OpenCV
 ```
 $ sudo pip3 uninstall opencv-python
 $ sudo pip uninstall opencv-python
-$ sudo apt list --installed | grep opencv
 ```
+And try to manually delete all OpenCV related files.
 ## Step 2: Install CUDA 10.0 and cuDNN
 ## Step 3: Install dependencies
 ```
