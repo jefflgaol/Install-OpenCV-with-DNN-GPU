@@ -44,17 +44,16 @@ $ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 	-D WITH_CUDA=ON \
 	-D WITH_CUDNN=ON \
 	-D OPENCV_DNN_CUDA=ON \
-	-D ENABLE_FAST_MATH=1 \
-	-D CUDA_FAST_MATH=1 \
+	-D ENABLE_FAST_MATH=ON \
+	-D CUDA_FAST_MATH=ON \
 	-D CUDA_ARCH_BIN=6.1 \
-	-D WITH_CUBLAS=1 \
+	-D WITH_CUBLAS=ON \
 	-D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib-4.2.0/modules \
 	-D HAVE_opencv_python3=ON \
 	-D PYTHON_EXECUTABLE=~/.virtualenvs/opencv_cuda/bin/python \
 	-D BUILD_EXAMPLES=ON \
 	-D WITH_GSTREAMER=ON \
-	-D WITH_GSTREAMER_0_10=OFF \
-	-D WITH_OPENGL=ON ..
+	-D WITH_GSTREAMER_0_10=OFF ..
 $ make -j16
 ```
 ## Step 6: Install OpenCV
