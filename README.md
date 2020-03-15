@@ -58,11 +58,3 @@ $ make -j12
 $ sudo make install
 $ sudo ldconfig
 ```
-## Rebuild
-```
-$ cd ~/opencv-4.2.0
-$ rm -rf build
-$ mkdir build
-$ cd build
-```
-and rebuild.
