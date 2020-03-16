@@ -1,4 +1,4 @@
-# How-To-Install-OpenCV-with-DNN-GPU
+# Install-OpenCV-with-DNN-GPU
 This guide will help you to build OpenCV (4.2.0) with DNN.
 ## Step 1: Remove previous existing OpenCV
 ```
