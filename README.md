@@ -1,5 +1,5 @@
 # Install-OpenCV-with-DNN-GPU
-This guide will help you to build OpenCV (4.2.0) with DNN.
+This guide will help you to build OpenCV (3.4.11) with DNN.
 ## Step 1: Remove previous existing OpenCV
 ```
 $ sudo pip3 uninstall opencv-python
