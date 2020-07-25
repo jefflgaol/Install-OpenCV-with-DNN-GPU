@@ -52,7 +52,7 @@ $ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 	-D BUILD_EXAMPLES=ON \
 	-D WITH_GSTREAMER=ON \
 	-D WITH_GSTREAMER_0_10=OFF ..
-$ make -j8
+$  make -j $(($(nproc) + 1))
 ```
 ## Step 6: Install OpenCV
 ```
