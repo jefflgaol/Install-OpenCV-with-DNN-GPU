@@ -30,7 +30,7 @@ $ unzip opencv_contrib.zip
 ## Step 5: Build OpenCV source code
 Remember to change CUDA_ARCH_BIN according your GPU computing capability (check: https://developer.nvidia.com/cuda-gpus). The minimum GPU computing capability is 5.3.
 ```
-$ cd ~/opencv-4.2.0
+$ cd ~/opencv-3.4.11
 $ mkdir build
 $ cd build
 $ cmake -D CMAKE_BUILD_TYPE=RELEASE \
